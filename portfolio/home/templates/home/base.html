@@ -1,0 +1,16 @@
+{% load static %}
+<!doctype html>
+<html lang='en'>
+    <head>
+        <link rel="stylesheet" href="{% static 'home/css/base.css' %}">
+
+    </head>
+    <body>
+        <h1 id='test'>Diogo Ferreira</h1>
+
+        {% block content %}
+        {% endblock %}
+
+        <script src="{% static 'home/js/base.js' %}"></script>
+    </body>
+</html>
