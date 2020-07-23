@@ -1,5 +1,89 @@
-h1 {
-    font: 'Montserrat';
-    font-size: 100px;
-    background-color: purple;
+/* 
+' single quote marks, .8vh em px, color: #ebc;, variable-name
+dont use quotations for urls()
+seperate selectors
+Header 
+Group sections by content like so
+*/
+
+/*
+Other ideas to incorporate into the CSS
+- choose a colour palette
+- projects setting will be the top of the footer make it with few, and then expand
+  into having the database provide them with the context into "home.html"
+*/
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Body */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  color: #fff;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, .3);
+}
+
+.container {
+  max-width: 42em;
+}
+
+/* Links */
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Footer */
+
+.footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: #181818;
+}
+
+.footer-inner {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+
+.projects {
+  display: block;
+  width: calc(33.3% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100px;
+}
+
+.projects:last-child {
+  margin-right: 0;
+}
+
+.footer-heading {
+  font-size: 22px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-heading a {
+  font-size: 18px;
+  font-weight: 200;
 }
